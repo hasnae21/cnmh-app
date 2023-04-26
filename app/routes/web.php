@@ -10,7 +10,7 @@ use App\Http\Controllers\TypeHandicapController;
 use App\Http\Controllers\DossierPatientController;
 use App\Http\Controllers\NiveauScolaireController;
 use App\Http\Controllers\CouvertureMedicalController;
-
+use App\Http\Controllers\StatistiquesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -78,3 +78,6 @@ Route::get('/parentForm',[DossierPatientController::class,'parent'])->name('doss
 Route::get('/patientForm',[DossierPatientController::class,'patient'])->name('dossier-patients.patient');
 Route::get('/entretien/{query}',[DossierPatientController::class,'entretien'])->name('dossier-patients.entretien');
 Route::post('/storeEntetien',[DossierPatientController::class,'storeEntetien'])->name('dossier-patients.storeEntetien');
+
+// Route statistiques
+Route::resource('/statistiques', StatistiquesController::class);

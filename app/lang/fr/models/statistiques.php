@@ -2,8 +2,8 @@
 
 return [
     'management'=>'Gestion',
-    'singular' => 'Situation familière',
-    'plural' => 'Situations familières',
+    'singular' => 'Statistique',
+    'plural' => 'Statistiques',
     "isMale" => "false",
     'fields' => [
         'id' => 'Id',

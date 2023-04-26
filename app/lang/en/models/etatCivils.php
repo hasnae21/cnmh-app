@@ -1,4 +1,3 @@
-<!-- EtatCivil = Situation Familière(Marié/..) -->
 <?php
 
 return [
